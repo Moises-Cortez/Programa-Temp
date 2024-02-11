@@ -1,0 +1,22 @@
+int temp = 6; // Temperatura
+
+void setup() {
+  size(100, 100);
+}
+
+void draw() {
+  determinarRopa(temp); // Función para determinar la ropa según la temperatura
+}
+
+// Función para determinar la ropa según la temperatura
+void determinarRopa(int temperatura) {
+  if (temperatura <= 5) {
+    println("Usa chumpa y gorro");
+  } else if (temperatura <= 15) {
+    println("Usa sweeter");
+  } else if (temperatura <= 25) {
+    println("Usa shorts");
+  } else {
+    println("No uses nada");
+  }
+}
